@@ -1,0 +1,6 @@
+# DS_Store
+*.DS_Store
+
+# other repositories
+hadoop-docker
+hadoop-cluster-docker
