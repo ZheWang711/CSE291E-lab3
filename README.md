@@ -4,9 +4,8 @@ Running Hadoop map reduce in docker
 ### Input file
 Input1.txt:
 ```
-line1. line1. line1!
-line2, line2, line2
-line3 line3..
+Hello Hadoop! xixixi
+Hello Docker! hehehe
 
 ```
 
@@ -35,7 +34,7 @@ Hello World!
     * Change current directory `cd cluster`
     * Pull the dependent docker image `sudo ./boost.sh`
     * Create data volume image and rebuild master image `sudo ./build-image.sh hadoop-master`
-        * Note this script will remove all running / waiting containers
+        * WARN: this script will remove all running / waiting containers, in order to work properly.
     * Start the container `sudo ./bootstrap.sh`, now you will be in a session with the master node of a Hadoop cluster with 4 slave nodes.
 * Run the same word count program as last section in cluster mode
     * `/data/wordcount.sh`
