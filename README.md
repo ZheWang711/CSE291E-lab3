@@ -35,6 +35,7 @@ Hello World!
     * Change current directory `cd cluster`
     * Pull the dependent docker image `sudo ./boost.sh`
     * Create data volume image and rebuild master image `sudo ./build-image.sh hadoop-master`
+        * Note this script will remove all running / waiting containers
     * Start the container `sudo ./bootstrap.sh`, now you will be in a session with the master node of a Hadoop cluster with 4 slave nodes.
 * Run the same word count program as last section in cluster mode
     * `/data/wordcount.sh`
