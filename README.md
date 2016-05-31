@@ -1,11 +1,27 @@
 # CSE291E-lab3
 Running Hadoop map reduce in docker
 
-### WordCount Input file
+### Input file
+Input1.txt:
 ```
 line1. line1. line1!
 line2, line2, line2
 line3 line3..
+
+```
+
+Input2.txt
+```
+Hello Docker!
+Hello World!
+
+```
+
+Input3.txt
+```
+Hello Hadoop!
+Hello World!
+
 ```
 
 ### How to run word count in a single docker container using hadoop pseudo distributed mode
