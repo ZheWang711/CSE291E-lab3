@@ -7,6 +7,7 @@ Running Hadoop map reduce in docker
 * To clean up, execute `./clean.sh`
 
 # Reference
- * This project is built based on https://hub.docker.com/r/sequenceiq/hadoop-docker/
+ * Single node pseudo distributed mode is based on: https://hub.docker.com/r/sequenceiq/hadoop-docker/
+ * Cluster mode is based on: https://github.com/kiwenlau/hadoop-cluster-docker
  * Word count example: https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#MapReduce_Tutorial
  * How to configure 4 nodes: http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html
