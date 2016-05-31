@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo docker rm -f `docker ps -a`
+
 image=$1
 tag="0.1.0"
 

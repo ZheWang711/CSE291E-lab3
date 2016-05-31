@@ -38,6 +38,8 @@ Hello World!
     * Start the container `sudo ./bootstrap.sh`, now you will be in a session with the master node of a Hadoop cluster with 4 slave nodes.
 * Run the same word count program as last section in cluster mode
     * `/data/wordcount.sh`
+* Run the bigram count program in cluster mode
+    * `/data/bigrams.sh`
 
 
 # Reference
