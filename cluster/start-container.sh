@@ -9,9 +9,6 @@ then
 	N=3
 fi
 
-# create a data volume container
-docker create -v /data --name datavolume zhe/data /bin/true
-
 # delete old master container and start new master container
 sudo docker rm -f master &> /dev/null
 echo "start master container..."

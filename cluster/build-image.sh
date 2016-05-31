@@ -61,7 +61,9 @@ then
 	docker_build hadoop-slave
 elif [ $image == "hadoop-master" ]
 then
+	echo "before"
 	docker rmi -f zhe/data
+	echo "after"
 	docker_rmi hadoop-master
 	docker_build hadoop-master
 	build_data
