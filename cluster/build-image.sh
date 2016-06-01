@@ -31,7 +31,7 @@ function docker_build()
 
 function build_data()
 {
-	cd data
+	cd data-volume
 	echo -e "bulding data volume image"
 	/usr/bin/time -f "real  %e" sudo docker build -t zhe/data .
 	cd ..
@@ -63,11 +63,13 @@ then
 	docker_build hadoop-slave
 elif [ $image == "hadoop-master" ]
 then
-	echo "before"
-	docker rmi -f zhe/data
-	echo "after"
+
 	docker_rmi hadoop-master
 	docker_build hadoop-master
+elif [ $image == "data-volume" ]
+then
+	echo "remove original data volume image"
+	docker rmi -f zhe/data
 	build_data
 elif [ $image == "hadoop-slave" ]
 then

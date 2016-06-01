@@ -1,8 +1,8 @@
 # CSE291E-lab3
 Running Hadoop map reduce in docker
 
-Zhe Wang (A53097553) <zhw176@cs.ucsd.edu>  
-Yuning Hui (A53091905) <y3hui@eng.ucsd.edu>
+-- Zhe Wang (A53097553) <zhw176@cs.ucsd.edu>  
+-- Yuning Hui (A53091905) <y3hui@eng.ucsd.edu>
 
 ### Input file
 Input1.txt:
@@ -36,9 +36,9 @@ Hello World!
 * Configure the environment
     * Change current directory `cd cluster`
     * Pull the dependent docker image `sudo ./boost.sh`
-    * Create data volume image and rebuild master image `sudo ./build-image.sh hadoop-master`
+    * Build the data volume image `sudo ./build-image.sh data-volume`, which includes most our code.
         * WARN: this script will remove all running / waiting containers, in order to work properly.
-    * Start the container `sudo ./bootstrap.sh`, now you will be in a session with the master node of a Hadoop cluster with 4 slave nodes.
+    * Start cluster containers `sudo ./bootstrap.sh`, now you will be in a session with the master node of a Hadoop cluster with 4 slave nodes.
 * Run the same word count program as last section in cluster mode
     * `/data/wordcount.sh`
 * Run the bigram count program in cluster mode
