@@ -1,6 +1,9 @@
 # CSE291E-lab3
 Running Hadoop map reduce in docker
 
+Zhe Wang (A53097553) <zhw176@cs.ucsd.edu>
+Yuning Hui (A53091905) <y3hui@eng.ucsd.edu>
+
 ### Input file
 Input1.txt:
 ```
