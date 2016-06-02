@@ -4,3 +4,6 @@
 # other repositories
 hadoop-docker
 hadoop-cluster-docker
+
+# ftpconfig
+.ftpconfig
