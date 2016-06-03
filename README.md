@@ -38,11 +38,11 @@ Hello World!
 ### How to run the demo in a pre-configured server (For CSE291E staff, available until June 9)
 This project depends on some third-party docker images and need `sudo` privilege. If you don't want to download those images or running in `sudo` mode on you machine, you can run it on a server that I've already configured.
 
-* log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
+* log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`. If there are any login problems please contact us. We will reply as soon as possible.
 * `cd lab3`
 * Run the demo in single node pseudo distributed mode:
     * `cd single`
-    * `sudo ./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
+    * `sudo ./build.sh`, and see the result, compared with input file (pseudo distributed mode) above. Note that the root password is `cse291e` too.
     * `cd ..`
 * Run the demo in a docker cluster:
     * `cd cluster`
@@ -55,6 +55,9 @@ This project depends on some third-party docker images and need `sudo` privilege
 
 
 ## How to configure and run the project on your own machine
+
+### System Requirements
+* Please make sure that your system is Linux, Ubuntu 14.04 is strongly preferred.
 
 ### Before running, change mode:
 * Change current directory to the project root directory `cd ...lab3`
