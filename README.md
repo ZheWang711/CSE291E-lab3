@@ -4,7 +4,16 @@ Running Hadoop map reduce in docker
 -- Zhe Wang (A53097553) <zhw176@cs.ucsd.edu>  
 -- Yuning Hui (A53091905) <y3hui@eng.ucsd.edu>
 
-### Input file
+
+### Input file (pseudo distributed mode)
+Input.txt:
+```
+line1. line1. line1!
+line2, line2, line2
+line3 line3..
+```
+
+### Input file (cluster mode)
 Input1.txt:
 ```
 Hello Hadoop! xixixi
@@ -43,6 +52,21 @@ Hello World!
     * `/data/wordcount.sh`
 * Run the bigram count program in cluster mode
     * `/data/bigrams.sh`
+
+### How to run the demo in pre-configured mode (For CSE291E stuff, available until June 9)
+* login to the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
+* `cd lab3`
+* Run the demo in single mode:
+    * `cd single`
+    * `./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
+    * `cd ..`
+* Run the demo in docker cluster:
+    * `cd cluster`
+    * `sudo ./bootstrap.sh`, you'll login to the master node of the cluster
+        * To run word count demo `/data/wordcount.sh`, compared with input file (cluster mode) above.
+        * To run bigram demo `/data/bigrams.sh`, compared with input file (cluster mode) above.
+    * Exit session with master node `exit`
+
 
 
 # Reference
