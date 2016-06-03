@@ -35,6 +35,33 @@ Hello World!
 
 ```
 
+### How to run the demo in a pre-configured server (For CSE291E staff, available until June 9)
+This project depends on some third-party docker images and need `sudo` privilege. If you don't want to download those images or running in `sudo` mode in you machine, you can run it in a server that I've already configured.
+
+* log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
+* `cd lab3`
+* Run the demo in single mode:
+    * `cd single`
+    * `sudo ./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
+    * `cd ..`
+* Run the demo in docker cluster:
+    * `cd cluster`
+    * `sudo ./bootstrap.sh`, you'll login to the master node of the cluster
+        * To see all cluster members `serf members`
+        * To run word count demo `/data/wordcount.sh`, compared with input file (cluster mode) above.
+        * To run bigram demo `/data/bigrams.sh`, compared with input file (cluster mode) above.
+    * Exit session with master node `exit`
+* Exit the session with the server: `exit`
+
+
+## How to configure and run the project on your own machine
+
+### Before running, change mode:
+* Change current directory to the project root directory `cd ...lab3`
+* Run a script that recursively change mode of any `.sh` and `.py` files in current directory
+    * `chmod a+x change_mode.sh`
+    * `./change_mode.sh`
+
 ### How to run word count in a single docker container using Hadoop pseudo distributed mode
 * Change current directory: `cd /XXX.../lab3/single/` (change `XXX...` according to your machine)
 * Build docker image and run the task: `single/build.sh`, wait until finish, then you will see the result.
@@ -52,23 +79,6 @@ Hello World!
     * `/data/wordcount.sh`
 * Run the bigram count program in cluster mode
     * `/data/bigrams.sh`
-
-### How to run the demo in a pre-configured server (For CSE291E staff, available until June 9)
-* log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
-* `cd lab3`
-* Run the demo in single mode:
-    * `cd single`
-    * `sudo ./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
-    * `cd ..`
-* Run the demo in docker cluster:
-    * `cd cluster`
-    * `sudo ./bootstrap.sh`, you'll login to the master node of the cluster
-        * To see all cluster members `serf members`
-        * To run word count demo `/data/wordcount.sh`, compared with input file (cluster mode) above.
-        * To run bigram demo `/data/bigrams.sh`, compared with input file (cluster mode) above.
-    * Exit session with master node `exit`
-* Exit the session with the server: `exit`
-
 
 # Reference
  * Single node pseudo distributed mode is based on: https://hub.docker.com/r/sequenceiq/hadoop-docker/
