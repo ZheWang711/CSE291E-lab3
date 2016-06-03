@@ -67,7 +67,7 @@ Hello World!
         * To run word count demo `/data/wordcount.sh`, compared with input file (cluster mode) above.
         * To run bigram demo `/data/bigrams.sh`, compared with input file (cluster mode) above.
     * Exit session with master node `exit`
-
+* Exit the session with the server: `exit`
 
 
 # Reference
