@@ -36,15 +36,15 @@ Hello World!
 ```
 
 ### How to run the demo in a pre-configured server (For CSE291E staff, available until June 9)
-This project depends on some third-party docker images and need `sudo` privilege. If you don't want to download those images or running in `sudo` mode in you machine, you can run it in a server that I've already configured.
+This project depends on some third-party docker images and need `sudo` privilege. If you don't want to download those images or running in `sudo` mode on you machine, you can run it on a server that I've already configured.
 
 * log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
 * `cd lab3`
-* Run the demo in single mode:
+* Run the demo in single node pseudo distributed mode:
     * `cd single`
     * `sudo ./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
     * `cd ..`
-* Run the demo in docker cluster:
+* Run the demo in a docker cluster:
     * `cd cluster`
     * `sudo ./bootstrap.sh`, you'll login to the master node of the cluster
         * To see all cluster members `serf members`
