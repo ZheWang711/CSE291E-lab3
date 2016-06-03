@@ -63,6 +63,7 @@ Hello World!
 * Run the demo in docker cluster:
     * `cd cluster`
     * `sudo ./bootstrap.sh`, you'll login to the master node of the cluster
+        * To see all cluster members `serf members`
         * To run word count demo `/data/wordcount.sh`, compared with input file (cluster mode) above.
         * To run bigram demo `/data/bigrams.sh`, compared with input file (cluster mode) above.
     * Exit session with master node `exit`
