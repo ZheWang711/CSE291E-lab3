@@ -58,7 +58,7 @@ Hello World!
 * `cd lab3`
 * Run the demo in single mode:
     * `cd single`
-    * `./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
+    * `sudo ./build.sh`, and see the result, compared with input file (pseudo distributed mode) above
     * `cd ..`
 * Run the demo in docker cluster:
     * `cd cluster`
