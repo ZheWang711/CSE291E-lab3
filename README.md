@@ -64,8 +64,8 @@ This project depends on some third-party docker images and need `sudo` privilege
 
 ### How to run word count in a single docker container using Hadoop pseudo distributed mode
 * Change current directory: `cd /XXX.../lab3/single/` (change `XXX...` according to your machine)
-* Build docker image and run the task: `single/build.sh`, wait until finish, then you will see the result.
-* To clean up, execute `./clean.sh`
+* Build docker image and run the task: `sudo single/build.sh`, wait until finish, then you will see the result.
+* To clean up, execute `sudo ./clean.sh`
 
 ### How to run Hadoop in cluster mode using docker
 * Note: this section is based on the work of Kai LIU: https://github.com/kiwenlau/hadoop-cluster-docker
