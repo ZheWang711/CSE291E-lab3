@@ -53,7 +53,7 @@ Hello World!
 * Run the bigram count program in cluster mode
     * `/data/bigrams.sh`
 
-### How to run the demo in a pre-configured server (For CSE291E stuff, available until June 9)
+### How to run the demo in a pre-configured server (For CSE291E staff, available until June 9)
 * log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
 * `cd lab3`
 * Run the demo in single mode:
