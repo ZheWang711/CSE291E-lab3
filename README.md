@@ -54,7 +54,7 @@ Hello World!
     * `/data/bigrams.sh`
 
 ### How to run the demo in a pre-configured server (For CSE291E stuff, available until June 9)
-* login to the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
+* log in the server: `ssh course_staff@291elab3.philosopherwang.me`, password is `cse291e`.
 * `cd lab3`
 * Run the demo in single mode:
     * `cd single`
