@@ -1,5 +1,5 @@
 # CSE291E-lab3
-*Please do not copy anything if you are taking this course, it's your responsibility to maintain your code integrity!*
+**Please do not copy anything if you are taking this course, it's your responsibility to maintain your code integrity!**
 
 -- Zhe Wang (A53097553) <zhw176@cs.ucsd.edu>  
 -- Yuning Hui (A53091905) <y3hui@eng.ucsd.edu>
